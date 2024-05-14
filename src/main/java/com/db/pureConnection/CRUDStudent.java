@@ -26,6 +26,7 @@ public class CRUDStudent {
     StudentDB.actualizar(e1);
     System.out.println("Se actualizó registro...");
 
+    // Eliminar registro
     StudentDB.eliminar(config.get("CARNE"));
     System.out.println("Se eliminó registro...");
 

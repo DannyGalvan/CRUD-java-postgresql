@@ -1,5 +1,7 @@
 package com.db.hibernateConnection;
 
+import java.time.LocalDate;
+
 import com.db.hibernateConnection.Context.PersistenceManager;
 import com.db.hibernateConnection.Data.StudentData;
 import com.db.hibernateConnection.Entities.Student;
@@ -11,10 +13,7 @@ public class HibernateConnection {
 
   public void run() {
 
-    System.out.println(studentService.getStudent("7590-20-14568"));
-    studentService.getAllStudents().stream().forEach(s -> System.out.println(s));
-
-    Student student = new Student("7590-20-1215444", "Panfilo", "Mendez", 30, "M");
+    Student student = new Student("7590-20-121132", "Juan", "Martinez", 26, "M", "Ingenieria en Sistemas", LocalDate.now());
 
     studentService.addStudent(student);
 
@@ -22,9 +21,12 @@ public class HibernateConnection {
 
     studentService.updateStudent(student);
 
-    System.out.println(studentService.getStudent("7590-20-1215444"));
+    System.out.println(studentService.getStudent("7590-20-121132"));
 
     studentService.deleteStudent("7590-20-1215444");
+
+    System.out.println(studentService.getStudent("7590-20-126060"));
+    studentService.getAllStudents().stream().forEach(s -> System.out.println(s));
 
     PersistenceManager.close();
   }

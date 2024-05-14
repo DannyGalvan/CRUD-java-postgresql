@@ -14,11 +14,11 @@ public class App {
 
     public static void main(String[] args) {
 
-        // ejecucion de las operaciones crud con jdbc
-        crudStudent.run();
-
         // ejecucion de las operaciones crud con hibernate
         hibernateConnection.run();
+
+        // ejecucion de las operaciones crud con jdbc
+        crudStudent.run();
     }
 
     public static String getNameConfiguration() {

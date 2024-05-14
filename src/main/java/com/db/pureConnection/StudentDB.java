@@ -111,7 +111,7 @@ public class StudentDB {
         Student e = new Student();
 
         try {
-            String sql = "SELECT * " +
+            String sql = "SELECT carne, nombre, apellido, edad, sexo " +
                     "FROM students " +
                     "WHERE carne = ?";
 
@@ -154,7 +154,7 @@ public class StudentDB {
         ArrayList<Student> a = new ArrayList<Student>();
 
         try {
-            String sql = "SELECT * " +
+            String sql = "SELECT carne, nombre, apellido, edad, sexo  " +
                     "FROM students ";
             st = conn.createStatement();
             rs = st.executeQuery(sql);
