@@ -25,7 +25,6 @@ public class HibernateConnection {
 
     studentService.deleteStudent("7590-20-1215444");
 
-    System.out.println(studentService.getStudent("7590-20-126060"));
     studentService.getAllStudents().stream().forEach(s -> System.out.println(s));
 
     PersistenceManager.close();
