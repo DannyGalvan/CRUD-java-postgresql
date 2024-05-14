@@ -1,7 +1,9 @@
-package com.db;
+package com.db.pureConnection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+
+import com.db.App;
 
 import io.github.cdimascio.dotenv.Dotenv;
 

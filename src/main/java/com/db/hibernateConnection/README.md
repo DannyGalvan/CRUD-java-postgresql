@@ -1,6 +1,5 @@
-# Proyecto basico CRUD con java y postgresql carpeta pureConnection
 
-# Proyecto basico CRUD con java, hibernate, postgresql, lombook, interfaces carpeta hibernateConnection
+# Proyecto basico CRUD con java y postgresql 
 
 # Pasos para correr el proyecto
 

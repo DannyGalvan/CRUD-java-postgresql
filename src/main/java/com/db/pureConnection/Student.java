@@ -1,6 +1,7 @@
-package com.db;
+package com.db.pureConnection;
 
 public class Student {
+
   private String Carne;
   private String Nombre;
   private String Apellido;

@@ -17,6 +17,9 @@ import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import com.db.pureConnection.Student;
+import com.db.pureConnection.StudentDB;
+
 public class StudentDBTest {
   @Mock
   private Connection conn;
