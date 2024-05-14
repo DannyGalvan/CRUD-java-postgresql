@@ -1,5 +1,5 @@
 
-# Proyecto basico CRUD con java y postreslq
+# Proyecto basico CRUD con java y postgresql
 
 # Pasos para correr el proyecto
 
